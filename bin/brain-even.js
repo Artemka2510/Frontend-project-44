@@ -22,7 +22,7 @@ const gameEven = () => {
             console.log('Correct!')
             k += 1;
         if (k === 3) {
-            console.log(`Congratulations, ${userName}!`)
+            console.log(`Congratulations, ${userName}!`);
         }
         } else  {
             console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);

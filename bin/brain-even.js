@@ -3,7 +3,7 @@ import hellouser from "../src/cli.js"
 import readlineSync from 'readline-sync';
 
 const phrase  ='Answer "yes" if the number is even, otherwise answer "no"';
-const evennumber = (number) => number % 2 === 0;
+const evenNumber = (number) => number % 2 === 0;
 const randomNumber = (min, max) => {
     return Math.floor(Math.random() * (max-min)) 
   };

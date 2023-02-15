@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import hellouser from "../src/cli.js"
+import hellouser from '../src/cli.js';
 
 hellouser();

@@ -26,4 +26,4 @@ const game = () => {
 
 export default () => {
   getGame(gamePhrase, game);
-};
+}; 

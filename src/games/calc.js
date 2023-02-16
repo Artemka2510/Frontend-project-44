@@ -18,7 +18,7 @@ const calculator = (a, b, action) => {
     case '*':
       return a * b;
     default:
-      throw new Error(action);
+      throw new Error("error");
   }
 };
 

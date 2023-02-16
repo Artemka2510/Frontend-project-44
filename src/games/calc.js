@@ -27,7 +27,7 @@ const game = () => {
   const b = randomNumber(1, 20);
   const action = randomAction(actions);
   const result = calculator(a, b, action);
-  return [`${a} ${action} ${b}`, result];
+  return [a + action + b, result];
 };
 export default () => {
   getGame(gamePhrase, game);

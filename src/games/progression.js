@@ -16,7 +16,7 @@ const game = () => {
   const length = randomNumber(5, 10);
   const index = randomNumber(1, 5);
   const step = randomNumber(1, 8);
-  const number = randomNumber(1, 20);
+  const number = randomNumber(2, 20);
   const line = progression(number, step, length);
   const answer = line[index];
   line[index] = '..';

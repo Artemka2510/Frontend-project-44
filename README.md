@@ -8,3 +8,7 @@
 ## __cd frontend-project-44__
 ## __make install__
 ## __npm link__
+
+# game examples :
+## brain-even :
+## <a href="https://asciinema.org/a/HN81nJ3rBINtUh0v1xDTgfvg7" target="_blank"><img src="https://asciinema.org/a/HN81nJ3rBINtUh0v1xDTgfvg7.svg" /></a>

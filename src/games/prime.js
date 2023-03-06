@@ -11,7 +11,7 @@ const isPrime = (n) => {
 };
 
 const game = () => {
-  const a = randomNumber(1, 101);
+  const a = randomNumber(2, 100);
   const correctAnswer = isPrime(a) ? 'yes' : 'no';
   return [a, correctAnswer];
 };

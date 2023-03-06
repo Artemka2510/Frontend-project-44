@@ -3,8 +3,8 @@
 <a href="https://codeclimate.com/github/Artemka2510/Frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/94fb60e8586615b090af/maintainability" /></a>
 
 
-*HOW INSTALL*
-git clone https://github.com/Artemka2510/Frontend-project-44.git
-__cd frontend-project-44__
-__make install__
-__npm link__
+#*HOW INSTALL*
+##git clone https://github.com/Artemka2510/Frontend-project-44.git
+##__cd frontend-project-44__
+##__make install__
+##__npm link__

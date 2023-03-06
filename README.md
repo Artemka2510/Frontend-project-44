@@ -24,3 +24,5 @@
 
 ## brain prime:
 ## <a href="https://asciinema.org/a/mfusqt5UTT09J4y4wgtlaymP2" target="_blank"><img src="https://asciinema.org/a/mfusqt5UTT09J4y4wgtlaymP2.svg" /></a>
+
+# Have a good game!

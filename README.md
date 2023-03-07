@@ -20,7 +20,7 @@
 ## <a href="https://asciinema.org/a/wiIcSUUM7XMrS2d7DMsEIWZXG" target="_blank"><img src="https://asciinema.org/a/wiIcSUUM7XMrS2d7DMsEIWZXG.svg" /></a>
 
 ## brain-progression:
-##<a href="https://asciinema.org/a/Z4xBL0jJTsunuWRYFbI3U8MDc" target="_blank"><img src="https://asciinema.org/a/Z4xBL0jJTsunuWRYFbI3U8MDc.svg" /></a>
+## <a href="https://asciinema.org/a/Z4xBL0jJTsunuWRYFbI3U8MDc" target="_blank"><img src="https://asciinema.org/a/Z4xBL0jJTsunuWRYFbI3U8MDc.svg" /></a>
 
 ## brain prime:
 ## <a href="https://asciinema.org/a/mfusqt5UTT09J4y4wgtlaymP2" target="_blank"><img src="https://asciinema.org/a/mfusqt5UTT09J4y4wgtlaymP2.svg" /></a>

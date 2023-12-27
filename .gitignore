@@ -1,1 +1,44 @@
 node_modules
+// nunber
+export default class Number {
+    constructor(validators) {
+        this.validators = [...validators]
+    }
+    isValid(value) {
+        return this.validators.every((validator) => validator(value) === true);
+    }
+    even() {
+        const validator = (value) => value % 2 === 0;
+        return new Number([...this.validators, validator])
+    }
+    
+    odd() {
+        const validator = (value) => value % 2 !== 0;
+        return new Number([...this.validators, validator])
+    }
+}
+//array
+export default class ArraySchema {
+    constructor(validators) {
+        this.validators = [...validators]
+    }
+    isValid(value) {
+        return this.validators.every((validator) => validator(value) === true);
+    }
+    length(num) {
+        const validator = (value) => (value !== null ? value.length === num : false);
+        return new ArraySchema([...this.validators, validator]);
+    }
+}
+//validator
+export default class Validator {
+    number(){
+        const validator = (value) => typeof value === 'number';
+        return new Number([validator]);
+    }
+
+    array() {
+        const validator = (value) => Array.isArray(value);
+        return new ArraySchema([validator]);
+    }
+}

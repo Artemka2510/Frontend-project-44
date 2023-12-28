@@ -42,3 +42,62 @@ export default class Validator {
         return new ArraySchema([validator]);
     }
 }
+constructor(vals) {
+    this.validators = [...vals];
+  }
+
+  isValid(value) {
+    return this.validators.every((validator) => validator(value) === true);
+  }
+
+  allIntegers() {
+    const validator = (arr) => arr.every((item) => Number.isInteger(item));
+    return new ArraySchema([...this.validators, validator]);
+  }
+
+  custom(val) {
+    const validator = (arr) => arr.every((item) => val(item));
+    return new ArraySchema([...this.validators, validator]);
+  }
+@@ -0,0 +1,14 @@
+export default class StringSchema {
+  constructor(vals) {
+    this.validators = [...vals];
+  }
+
+  isValid(value) {
+    return this.validators.every((validator) => validator(value) === true);
+  }
+
+  hasSpaces() {
+    const validator = (string) => string.includes(' ');
+    return new StringSchema([...this.validators, validator]);
+  }
+}
+export default class FunctionSchema {
+  constructor(validators, context = {}, expectedValue = null, args = []) {
+    this.validators = validators;
+    this.context = context;
+    this.expectedValue = expectedValue;
+    this.args = args;
+  }
+
+  isValid(value) {
+    if (!this.expectedValue) {
+      return this.validators.every((validator) => validator(value) === true);
+    }
+    return value.call(this.context, ...this.args) === this.expectedValue;
+  }
+
+  expect(value) {
+    return new FunctionSchema(this.validators, this.context, value, this.args);
+  }
+
+  callWith(context) {
+    return new FunctionSchema(this.validators, context, this.expectedValue, this.args);
+  }
+
+  arguments(...args) {
+    return new FunctionSchema(this.validators, this.context, this.expectedValue, args);
+  }
+}
